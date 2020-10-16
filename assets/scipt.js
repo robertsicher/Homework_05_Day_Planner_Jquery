@@ -1,4 +1,4 @@
-//Date and time display
+//Date and time finder
 var currentDay = $("#currentDay");
 
 function updateCurrentDay() {
@@ -24,13 +24,34 @@ function updateTimeSlots() {
     })
 };
 
+//Save button
+$('.saveBtn').click(function() {
+    const time = $(this).parent().attr('id');
+    const task = $(this).siblings('.tasks').val();
+
+    localStorage.setItem(time, task);
+});
+
+// Show the saved tasks
+function showTasks() {
+    $('.tasks').each(function() {
+        let time = $(this).parent().attr('id');
+
+        task = localStorage.getItem(time);
+
+        $(this).val(task)
+    })
+};
+
 // Load classes and times
 $(document).ready(function () {
 
     updateTimeSlots();
+    showTasks();
 
     setInterval(function () {
         updateCurrentDay();
         updateTimeSlots();
     }, 500);
 });
+
