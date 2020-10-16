@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <script src="https://kit.fontawesome.com/98f88917cc.js" crossorigin="anonymous"></script>
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p class="currentdate">Todays date is:</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+
+    <!-- Timeblocks go here -->
+
+    <main class="time-planner">
+
+      <div class="row time-block" id="8">
+        <div class="col-xs-4 col-sm-2 col-md-1 text-center hour">
+          <p class="">8am</p>
+        </div>
+        <textarea class="col-sm-8 col-md-10 border border-dark tasks"></textarea>
+        <button class="btn col-sm-2 col-md-1 saveBtn">
+          <i class="fas fa-save fa-2x "></i>
+        </button>
+      </div>
+
+
+      <div class="row time-block" id="9">
+        <div class="col-xs-4 col-sm-2 col-md-1 text-center hour">
+          <p class="">9am</p>
+        </div>
+        <textarea class="col-sm-8 col-md-10 border border-dark tasks"></textarea>
+        <button class="btn col-sm-2 col-md-1 saveBtn">
+          <i class="fas fa-save fa-2x "></i>
+        </button>
+      </div>
+
+
+      <div class="row time-block" id="10">
+        <div class="col-xs-4 col-sm-2 col-md-1 text-center hour">
+          <p class="">10am</p>
+        </div>
+        <textarea class="col-sm-8 col-md-10 border border-dark tasks"></textarea>
+        <button class="btn col-sm-2 col-md-1 saveBtn">
+          <i class="fas fa-save fa-2x "></i>
+        </button>
+      </div>
+
+      <div class="row time-block" id="11">
+        <div class="col-xs-4 col-sm-2 col-md-1 text-center hour">
+          <p class="">11am</p>
+        </div>
+        <textarea class="col-sm-8 col-md-10 border border-dark tasks"></textarea>
+        <button class="btn col-sm-2 col-md-1 saveBtn">
+          <i class="fas fa-save fa-2x "></i>
+        </button>
+      </div>
+
+      <div class="row time-block" id="12">
+        <div class="col-xs-4 col-sm-2 col-md-1 text-center hour">
+          <p class="">12pm</p>
+        </div>
+        <textarea class="col-sm-8 col-md-10 border border-dark tasks"></textarea>
+        <button class="btn col-sm-2 col-md-1 saveBtn">
+          <i class="fas fa-save fa-2x "></i>
+        </button>
+      </div>
+
+      <div class="row time-block" id="13">
+        <div class="col-xs-4 col-sm-2 col-md-1 text-center hour">
+          <p class="">1pm</p>
+        </div>
+        <textarea class="col-sm-8 col-md-10 border border-dark tasks"></textarea>
+        <button class="btn col-sm-2 col-md-1 saveBtn">
+          <i class="fas fa-save fa-2x "></i>
+        </button>
+      </div>
+
+      <div class="row time-block" id="14">
+        <div class="col-xs-4 col-sm-2 col-md-1 text-center hour">
+          <p class="">2pm</p>
+        </div>
+        <textarea class="col-sm-8 col-md-10 border border-dark tasks"></textarea>
+        <button class="btn col-sm-2 col-md-1 saveBtn">
+          <i class="fas fa-save fa-2x "></i>
+        </button>
+      </div>
+
+      <div class="row time-block" id="15">
+        <div class="col-xs-4 col-sm-2 col-md-1 text-center hour">
+          <p class="">3pm</p>
+        </div>
+        <textarea class="col-sm-8 col-md-10 border border-dark tasks"></textarea>
+        <button class="btn col-sm-2 col-md-1 saveBtn">
+          <i class="fas fa-save fa-2x "></i>
+        </button>
+      </div>
+
+      <div class="row time-block" id="16">
+        <div class="col-xs-4 col-sm-2 col-md-1 text-center hour">
+          <p class="">4pm</p>
+        </div>
+        <textarea class="col-sm-8 col-md-10 border border-dark tasks"></textarea>
+        <button class="btn col-sm-2 col-md-1 saveBtn">
+          <i class="fas fa-save fa-2x "></i>
+        </button>
+      </div>
+
+
+    </main>
+
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./Assets/scipt.js"></script>
+</body>
+
+</html>
