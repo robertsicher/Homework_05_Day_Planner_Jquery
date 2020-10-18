@@ -43,7 +43,7 @@ function showTasks() {
     })
 };
 
-// Load classes and times
+// Load classes, times, and pull the local storage
 $(document).ready(function () {
 
     updateTimeSlots();
